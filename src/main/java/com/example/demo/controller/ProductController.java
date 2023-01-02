@@ -19,6 +19,11 @@ public class ProductController {
 	@Autowired
 	private ProductRepository productRepository;
 
+	@GetMapping("/")
+	public ResponseEntity<String> hello() {
+		return ResponseEntity.ok("Hello, this is simple project build from Dushko Manev, 196063");
+	}
+
 	@GetMapping("/products")
 	public ResponseEntity<List<Product>> getAllProduct() {
 		return ResponseEntity.ok(productRepository.findAll());
