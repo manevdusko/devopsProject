@@ -21,7 +21,7 @@ public class ProductController {
 
 	@GetMapping("/")
 	public ResponseEntity<String> hello() {
-		return ResponseEntity.ok("Hello, this is simple project build by Dushko Manev, 196063");
+		return ResponseEntity.ok("retre, this is simple project build by Dushko Manev, 196063");
 	}
 
 	@GetMapping("/products")
